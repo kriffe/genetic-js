@@ -1,10 +1,11 @@
 {
   "name": "genetic-js",
-  "version": "0.1.16",
+  "version": "0.1.15",
   "description": "Advanced genetic and evolutionary algorithm library",
   "main": "lib/genetic.js",
   "scripts": {
-    "test": "make check"
+    "test": "mocha",
+	"build": "node node_modules/uglify-js/bin/uglifyjs -o build/genetic-js.min.js lib/genetic.js"
   },
   "repository": {
     "type": "git",
